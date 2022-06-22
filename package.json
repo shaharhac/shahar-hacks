@@ -1,0 +1,20 @@
+{
+  "name": "shahar-hacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "devDependencies": {
+    "@nuxt/content": "^2.0.0",
+    "nuxt": "^3.0.0-rc.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
