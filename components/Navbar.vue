@@ -1,25 +1,23 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/"> SHAHAR HACKS </a>
-      <a
-        role="button"
-        class="navbar-burger"
-        aria-label="menu"
-        aria-expanded="false"
-        data-target="navbarBasicExample"
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item"> Posts </a>
+        <a href="/" class="navbar-item is-active"> Posts </a>
+        <a href="/about" class="navbar-item"> About </a>
+      </div>
 
-        <a class="navbar-item" href="/about"> About Me </a>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a href="#">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fas fa-rss-square"></i>
+          </a>
+        </div>
       </div>
     </div>
   </nav>

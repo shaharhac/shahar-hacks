@@ -6,9 +6,9 @@ const { data: blogPosts } = await useAsyncData("blogPosts", () =>
 
 <template>
   <div>
-    <section class="articles">
-      <div v-for="post in blogPosts" :key="post._path">
-        <a :href="post._path">{{ post.title }}</a>
+    <section class="blog-posts">
+      <div v-for="(post, index) in blogPosts" :key="post._path">
+        post #{{ index + 1 }}<a :href="post._path">{{ post.title }}</a>
       </div>
     </section>
   </div>

@@ -6,4 +6,5 @@ export default defineNuxtConfig({
   styleResources: {
     sass: ["~bulma/sass/utilities/all"],
   },
+  css: ["@/assets/css/main.css"],
 });
