@@ -6,8 +6,8 @@
   >
     <h1 class="text-xl font-burtons">SHAHAR HACKS</h1>
     <ul class="flex items-center gap-8">
-      <li><a>Posts</a></li>
-      <li><a>About</a></li>
+      <li><NuxtLink to="/">Posts</NuxtLink></li>
+      <li><NuxtLink to="/about">About</NuxtLink></li>
     </ul>
   </nav>
 </template>

@@ -10,4 +10,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  routeRules: {
+    // Render these routes with SPA
+    "/**": { ssr: false },
+  },
 });
