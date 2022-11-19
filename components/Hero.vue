@@ -7,11 +7,6 @@
     </div>
     <div class="hero-body">
       <div class="container has-text-centered">
-        <img
-          src="assets/images/shahar-hacks-logo-white.png"
-          width="200"
-          height="200"
-        />
         <h2 class="subtitle">
           Me Getting Nerdy about things nobody cares about
         </h2>

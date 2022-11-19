@@ -6,12 +6,27 @@ const { data: blogPosts } = await useAsyncData("blogPosts", () =>
 
 <template>
   <div>
-    <section class="blog-posts">
-      <div v-for="(post, index) in blogPosts" :key="post._path">
-        post #{{ index + 1 }}<a :href="post._path">{{ post.title }}</a>
-      </div>
-    </section>
+    <ul class="blog-posts__list">
+      <li
+        v-for="(post, index) in blogPosts"
+        :key="post._path"
+        class="blog-posts__item"
+      >
+        <BlogPostPreviewItem
+          :title="post.title"
+          :path="post._path"
+          :published="new Date()"
+          :preview="`this is post number ${index + 1}`"
+          :tags="['dev', 'lifestyle']"
+        />
+      </li>
+    </ul>
   </div>
 </template>
 
-<style></style>
+<style lang="scss">
+.blog-posts__list {
+  padding: 0;
+  margin: 0;
+}
+</style>
