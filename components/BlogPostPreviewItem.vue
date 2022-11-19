@@ -6,7 +6,7 @@ export default {
       required: true,
     },
     published: {
-      type: String,
+      type: Date,
       required: true,
     },
     preview: {
@@ -18,13 +18,10 @@ export default {
     },
     path: {
       type: String,
-
       required: true,
     },
   },
   setup(props) {
-    console.log(props);
-
     const formatPublishDate = computed(() => {
       const dateFormat = new Date(props.published);
       const options = {

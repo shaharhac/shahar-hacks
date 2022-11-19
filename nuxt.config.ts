@@ -2,9 +2,12 @@ import { defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  modules: ["@nuxt/content", "@nuxtjs/bulma"],
-  styleResources: {
-    sass: ["~bulma/sass/utilities/all"],
+  modules: ["@nuxt/content"],
+  css: ["~/assets/css/main.css"],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
-  css: ["@/assets/css/main.css"],
 });

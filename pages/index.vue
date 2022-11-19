@@ -1,5 +1,5 @@
 <template>
-  <div class="site-container">
+  <div class="bg-white px-10">
     <Hero />
     <main class="content-container">
       <BlogPostList />
