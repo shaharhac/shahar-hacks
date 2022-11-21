@@ -1,3 +1,10 @@
+---
+title: post #1
+backgroundImage: ../assets/images/banana.jpg
+tags: ["dev", "lifestyle"]
+published: 2022-11-19
+---
+
 # Hello Content v2!
 
 This page corresponds to the `/` route of your website. You can delete it or create another file in the `content/` directory.

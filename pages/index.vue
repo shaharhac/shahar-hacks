@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Hero />
-    <main class="content-container">
+    <Navbar />
+    <main>
       <BlogPostList />
     </main>
   </div>

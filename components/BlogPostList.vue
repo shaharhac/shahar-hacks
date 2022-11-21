@@ -2,6 +2,12 @@
 const { data: blogPosts } = await useAsyncData("blogPosts", () =>
   queryContent("/").find()
 );
+
+const formatDate = (str) => {
+  console.log({ str });
+  const date = new Date(str);
+  return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
+};
 </script>
 
 <template>
@@ -11,18 +17,12 @@ const { data: blogPosts } = await useAsyncData("blogPosts", () =>
         <BlogPostPreviewItem
           :title="post.title"
           :path="post._path"
-          :published="new Date()"
+          :published="formatDate(post.published)"
           :preview="`this is post number ${index + 1}`"
-          :tags="['dev', 'lifestyle']"
+          :tags="post.tags"
+          :backgroundImage="post.backgroundImage"
         />
       </li>
     </ul>
   </div>
 </template>
-
-<style lang="scss">
-.blog-posts__list {
-  padding: 0;
-  margin: 0;
-}
-</style>
