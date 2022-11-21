@@ -4,7 +4,9 @@
     role="navigation"
     aria-label="main navigation"
   >
-    <h1 class="text-xl font-burtons">SHAHAR HACKS</h1>
+    <NuxtLink to="/">
+      <h1 class="text-xl font-burtons">SHAHAR HACKS</h1>
+    </NuxtLink>
     <ul class="flex items-center gap-8">
       <li><NuxtLink to="/">Posts</NuxtLink></li>
       <li><NuxtLink to="/about">About</NuxtLink></li>
