@@ -2,7 +2,7 @@
   <div>
     <Navbar />
     <main>
-      <BlogPostList />
+      <Posts />
     </main>
   </div>
 </template>

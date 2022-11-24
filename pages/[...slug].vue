@@ -1,7 +1,7 @@
 <template>
-  <div class="site-container">
-    <Hero />
-    <main class="content-container">
+  <div>
+    <main>
+      <Navbar />
       <ContentDoc />
     </main>
   </div>
