@@ -7,14 +7,32 @@ published: 2022-11-19
 type: post
 ---
 
-# Hello Content v2!
+# Nuxt Content Theme Docs Playground
 
-This page corresponds to the `/` route of your website. You can delete it or create another file in the `content/` directory.
+> Main playground for https://content.nuxtjs.org/themes-docs
 
-## yo
+## Setup
 
-Try to navigate to [/about](/about). These 2 pages are rendered by the `pages/[...slug].vue` component.
+Install dependencies:
 
----
+```bash
+yarn install
+```
 
-Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
+## Development
+
+```bash
+yarn dev
+```
+
+## Static Generation
+
+This will create the `dist/` directory for publishing to static hosting (Vercel, Netlify, etc.)
+
+```bash
+yarn generate
+```
+
+To preview the static generated app, run `yarn start`
+
+For detailed explanation on how things work, checkout [nuxt/content](https://content.nuxtjs.org).

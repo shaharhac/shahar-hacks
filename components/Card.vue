@@ -24,21 +24,7 @@ export default {
       type: String,
     },
   },
-  setup(props) {
-    const formatPublishDate = computed(() => {
-      const dateFormat = new Date(props.published);
-      const options = {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      };
-      return dateFormat.toLocaleDateString("en-US", options);
-    });
-
-    return {
-      formatPublishDate,
-    };
-  },
+  setup(props) {},
 };
 </script>
 
