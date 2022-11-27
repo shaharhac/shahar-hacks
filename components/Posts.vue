@@ -11,7 +11,7 @@ const formatDate = (str) => {
 
 <template>
   <div>
-    <ul class="flex">
+    <ul class="flex content-center justify-center sm:flex-col sm:gap-8">
       <li v-for="post in blogPosts" :key="post._path">
         <Card
           :title="post.title"

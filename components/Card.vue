@@ -30,9 +30,7 @@ export default {
 
 <template>
   <div class="max-w-lg mx-auto">
-    <div
-      class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm mb-5"
-    >
+    <div class="bg-white shadow-md border border-gray-200 rounded-lg mb-5">
       <nuxt-link :to="path">
         <img class="rounded-t-lg" :src="backgroundImage" alt="" />
       </nuxt-link>
@@ -50,7 +48,7 @@ export default {
         </div>
         <nuxt-link
           :to="path"
-          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
+          class="text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
         >
           Read more
         </nuxt-link>
