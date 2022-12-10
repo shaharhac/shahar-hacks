@@ -1,8 +1,5 @@
 <template>
   <div>
-    <Navbar />
-    <main>
-      <Posts />
-    </main>
+    <Posts />
   </div>
 </template>

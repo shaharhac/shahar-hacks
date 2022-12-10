@@ -7,13 +7,10 @@ const formatDate = (str) => {
 
 <template>
   <div>
-    <main>
-      <Navbar />
-      <ContentDoc v-slot="{ doc }">
-        <h1>{{ doc.title }}</h1>
-        <h2>{{ formatDate(doc.published) }}</h2>
-        <ContentRenderer :value="doc" />
-      </ContentDoc>
-    </main>
+    <ContentDoc v-slot="{ doc }">
+      <h1>{{ doc.title }}</h1>
+      <h2>{{ formatDate(doc.published) }}</h2>
+      <ContentRenderer :value="doc" />
+    </ContentDoc>
   </div>
 </template>
