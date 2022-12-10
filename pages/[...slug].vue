@@ -6,11 +6,11 @@ const formatDate = (str) => {
 </script>
 
 <template>
-  <div>
+  <article>
     <ContentDoc v-slot="{ doc }">
       <h1>{{ doc.title }}</h1>
       <h2>{{ formatDate(doc.published) }}</h2>
       <ContentRenderer :value="doc" />
     </ContentDoc>
-  </div>
+  </article>
 </template>
