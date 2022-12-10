@@ -34,9 +34,7 @@ export default {
         </li>
       </ul>
       <div class="space-y-2 cursor-pointer lg:hidden" @click="opened = !opened">
-        <div class="w-8 h-0.5 bg-gray-600"></div>
-        <div class="w-8 h-0.5 bg-gray-600"></div>
-        <div class="w-8 h-0.5 bg-gray-600"></div>
+        <img class="w-8 h-8" src="~/assets/images/burger.png" alt="" />
       </div>
     </nav>
     <nav v-show="opened" class="w-full h-full -mt-12 absolute">
