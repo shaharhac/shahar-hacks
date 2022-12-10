@@ -24,6 +24,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@nuxtjs/style-resources": "^1.2.1"
+    "@nuxtjs/style-resources": "^1.2.1",
+    "click-outside-vue3": "^4.0.1"
   }
 }

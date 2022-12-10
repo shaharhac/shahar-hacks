@@ -21,7 +21,7 @@ export default {
 <template>
   <div class="relative">
     <nav
-      class="py-10 mb-12 flex justify-between"
+      class="py-10 flex justify-between items-center"
       role="navigation"
       aria-label="main navigation"
     >
@@ -37,9 +37,14 @@ export default {
         <img class="w-8 h-8" src="~/assets/images/burger.png" alt="" />
       </div>
     </nav>
-    <nav v-show="opened" class="w-full h-full -mt-12 absolute">
+    <nav v-if="opened" class="w-full h-full absolute">
       <ul class="flex flex-col text-center">
-        <li v-for="(page, index) in pages" :key="index">
+        <li
+          v-for="(page, index) in pages"
+          :key="index"
+          v-click-outside="() => (opened = false)"
+          @click="opened = false"
+        >
           <NuxtLink
             :to="page.href"
             class="bg-white hover:bg-green-500 p-6 block border border-black"
