@@ -3,7 +3,7 @@ export default {
   data() {
     return {
       opened: false,
-      pages: [
+      actions: [
         {
           displayName: "Posts",
           href: "/",
@@ -29,8 +29,8 @@ export default {
         <h1 class="text-xl font-burtons">SHAHAR HACKS</h1>
       </NuxtLink>
       <ul class="flex items-center gap-8 invisible lg:visible">
-        <li v-for="(page, index) in pages" :key="index">
-          <NuxtLink :to="page.href"> {{ page.displayName }}</NuxtLink>
+        <li v-for="(action, index) in actions" :key="index">
+          <NuxtLink :to="action.href"> {{ action.displayName }}</NuxtLink>
         </li>
       </ul>
       <div class="space-y-2 cursor-pointer lg:hidden" @click="opened = !opened">
@@ -40,16 +40,16 @@ export default {
     <nav v-if="opened" class="w-full h-full absolute">
       <ul class="flex flex-col text-center">
         <li
-          v-for="(page, index) in pages"
+          v-for="(action, index) in actions"
           :key="index"
           v-click-outside="() => (opened = false)"
           @click="opened = false"
         >
           <NuxtLink
-            :to="page.href"
+            :to="action.href"
             class="bg-white hover:bg-green-500 p-6 block border border-black"
           >
-            {{ page.displayName }}
+            {{ action.displayName }}
           </NuxtLink>
         </li>
       </ul>
