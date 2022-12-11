@@ -20,10 +20,6 @@ module.exports = {
         4.5: "4.5rem",
       },
     },
-    screens: {
-      xs: "475px",
-      ...defaultTheme.screens,
-    },
   },
   plugins: [],
 };
