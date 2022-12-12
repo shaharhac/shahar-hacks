@@ -14,9 +14,9 @@ export default {
         },
         {
           component: resolveComponent("DarkModeToggle"),
-          // listeners: {
-          //   toggle: this.toggle,
-          // },
+          on: {
+            toggle: this.toggle,
+          },
         },
       ],
     };
@@ -45,12 +45,9 @@ export default {
           <NuxtLink v-if="action.href" :to="action.href">
             {{ action.displayName }}</NuxtLink
           >
-          <component
-            v-else-if="action.component"
-            :is="action.component"
-            @toggle="toggle"
-            :v-on="action.listeners"
-          />
+          <div v-else-if="action.component">
+            <component :is="action.component" @toggle="action.on.toggle" />
+          </div>
         </li>
       </ul>
       <div class="space-y-2 cursor-pointer lg:hidden" @click="opened = !opened">
@@ -67,7 +64,7 @@ export default {
         >
           <NuxtLink
             :to="action.href"
-            class="bg-white hover:bg-green-500 p-6 block border border-black"
+            class="bg-white hover:bg-green-500 p-6 block border border-black dark:border-white dark:bg-gray-700"
           >
             {{ action.displayName }}
           </NuxtLink>
