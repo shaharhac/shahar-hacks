@@ -12,8 +12,20 @@ export default {
           displayName: "About",
           href: "/About",
         },
+        {
+          component: resolveComponent("DarkModeToggle"),
+          // listeners: {
+          //   toggle: this.toggle,
+          // },
+        },
       ],
     };
+  },
+  methods: {
+    toggle(value) {
+      const [mode, setMode] = useMode();
+      setMode(value);
+    },
   },
 };
 </script>
@@ -30,7 +42,15 @@ export default {
       </NuxtLink>
       <ul class="flex items-center gap-8 invisible lg:visible">
         <li v-for="(action, index) in actions" :key="index">
-          <NuxtLink :to="action.href"> {{ action.displayName }}</NuxtLink>
+          <NuxtLink v-if="action.href" :to="action.href">
+            {{ action.displayName }}</NuxtLink
+          >
+          <component
+            v-else-if="action.component"
+            :is="action.component"
+            @toggle="toggle"
+            :v-on="action.listeners"
+          />
         </li>
       </ul>
       <div class="space-y-2 cursor-pointer lg:hidden" @click="opened = !opened">
