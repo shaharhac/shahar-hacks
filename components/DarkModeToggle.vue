@@ -5,7 +5,9 @@ const emit = defineEmits(["toggle"]);
 const lightMode = ref(true);
 
 const imgSrc = computed(() => {
-  return lightMode.value ? "/icons/half-moon.png" : "/icons/sun.png";
+  return lightMode.value
+    ? "/icons/lightbulb-off.png"
+    : "/icons/lightbulb-on.png";
 });
 
 const toggle = () => {
@@ -15,5 +17,5 @@ const toggle = () => {
 </script>
 
 <template>
-  <img class="cursor-pointer w-4 h-4" :src="imgSrc" @click="toggle" />
+  <img class="cursor-pointer w-5 h-5" :src="imgSrc" @click="toggle" />
 </template>
