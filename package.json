@@ -25,6 +25,7 @@
   "license": "ISC",
   "dependencies": {
     "@nuxtjs/style-resources": "^1.2.1",
+    "@tailwindcss/typography": "^0.5.8",
     "click-outside-vue3": "^4.0.1"
   }
 }

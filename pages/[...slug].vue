@@ -8,9 +8,10 @@ const formatDate = (str) => {
 <template>
   <article>
     <ContentDoc v-slot="{ doc }">
-      <h1>{{ doc.title }}</h1>
-      <h2>{{ formatDate(doc.published) }}</h2>
-      <ContentRenderer :value="doc" />
+      <ContentRenderer
+        :value="doc"
+        class="mt-4 prose max-w-none prose-xl prose-slate dark:prose-invert"
+      />
     </ContentDoc>
   </article>
 </template>
