@@ -1,9 +1,9 @@
-export const useMode = () => {
-  const mode = useState<boolean>("lightMode", () => true);
+export const useDarkMode = () => {
+  const darkMode = useState<boolean>("useDarkMode", () => false);
 
-  const setMode = (newMode: boolean) => {
-    mode.value = newMode;
+  const setDarkMode = (isDarkMode: boolean) => {
+    darkMode.value = isDarkMode;
   };
 
-  return [mode, setMode];
+  return [darkMode, setDarkMode];
 };

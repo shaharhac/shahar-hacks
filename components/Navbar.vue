@@ -14,18 +14,9 @@ export default {
         },
         {
           component: resolveComponent("DarkModeToggle"),
-          on: {
-            toggle: this.toggle,
-          },
         },
       ],
     };
-  },
-  methods: {
-    toggle(value) {
-      const [mode, setMode] = useMode();
-      setMode(value);
-    },
   },
 };
 </script>
@@ -46,7 +37,7 @@ export default {
             {{ action.displayName }}</NuxtLink
           >
           <div v-else-if="action.component">
-            <component :is="action.component" @toggle="action.on.toggle" />
+            <component :is="action.component" />
           </div>
         </li>
       </ul>

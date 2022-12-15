@@ -2,17 +2,16 @@
 import { ref, computed } from "vue";
 
 const emit = defineEmits(["toggle"]);
-const lightMode = ref(true);
+const [darkMode, setDarkMode] = useDarkMode();
 
 const imgSrc = computed(() => {
-  return lightMode.value
-    ? "/icons/lightbulb-off.png"
-    : "/icons/lightbulb-on.png";
+  return darkMode.value
+    ? "/icons/lightbulb-on.png"
+    : "/icons/lightbulb-off.png";
 });
 
 const toggle = () => {
-  lightMode.value = !lightMode.value;
-  emit("toggle", lightMode.value);
+  setDarkMode(!darkMode.value);
 };
 </script>
 
