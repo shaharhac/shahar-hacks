@@ -42,7 +42,7 @@ export default {
         </li>
       </ul>
       <div class="space-y-2 cursor-pointer lg:hidden" @click="opened = !opened">
-        <img class="w-8 h-8" src="~/assets/images/burger.png" alt="" />
+        <img class="w-8 h-8" src="/images/burger.png" alt="" />
       </div>
     </nav>
     <nav v-if="opened" class="w-full h-full absolute">
