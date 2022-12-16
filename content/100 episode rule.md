@@ -1,7 +1,7 @@
 ---
 title: "The 100 episode rule"
 preview: "100 episodes is considered to be the magic number at which point many television series are viable TV syndication"
-backgroundImage: ../assets/images/man-watching-television.png
+backgroundImage: /images/man-watching-television.png
 tags: ["content"]
 published: 2022-11-19
 type: post
