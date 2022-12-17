@@ -7,7 +7,7 @@ published: 2022-11-19
 type: post
 ---
 
-# The 100 episodes rule
+# Post #1
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare malesuada ligula, vitae volutpat risus vulputate eleifend. Mauris imperdiet dui nec velit tincidunt, et semper purus viverra. Ut nec ornare ex, convallis sodales sapien. In hac habitasse platea dictumst. Praesent quis turpis id leo luctus imperdiet. Cras finibus vulputate pellentesque. Curabitur purus sapien, pretium eu tincidunt at, sodales at mauris.
 
