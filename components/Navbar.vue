@@ -55,6 +55,7 @@ const burgerSrc = computed(() => {
           @click="opened = false"
         >
           <NuxtLink
+            v-if="action.href"
             :to="action.href"
             class="bg-white hover:bg-green-500 p-6 block border border-black dark:border-white dark:bg-gray-700 dark:hover:bg-gray-600"
           >
