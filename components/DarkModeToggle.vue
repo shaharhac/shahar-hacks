@@ -1,7 +1,6 @@
 <script setup>
-import { ref, computed } from "vue";
+import { computed } from "vue";
 
-const emit = defineEmits(["toggle"]);
 const [darkMode, setDarkMode] = useDarkMode();
 
 const imgSrc = computed(() => {
