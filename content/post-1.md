@@ -1,8 +1,8 @@
 ---
-title: "The 100 episode rule"
-preview: "100 episodes is considered to be the magic number at which point many television series are viable TV syndication"
+title: "Post #1"
+preview: "this is the first post this is the first post this is the first post this is the first post this is the first post"
 backgroundImage: /images/man-watching-television.png
-tags: ["content"]
+tags: ["tag 1"]
 published: 2022-11-19
 type: post
 ---

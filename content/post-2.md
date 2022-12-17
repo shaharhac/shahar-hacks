@@ -1,8 +1,8 @@
 ---
-title: Building a URL shortener
-preview: designing a service that can take a url and transform it to another unique and shorter url.
+title: "Post #2"
+preview: this is the first post this is the second post this is the second post this is the second post
 backgroundImage: /images/chef-robot-cutting-paper.png
-tags: ["dev", "system-design"]
+tags: ["tag 1", "tag 2"]
 published: 2022-11-19
 type: post
 ---
