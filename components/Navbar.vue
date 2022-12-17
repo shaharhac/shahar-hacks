@@ -1,24 +1,25 @@
-<script>
-export default {
-  data() {
-    return {
-      opened: false,
-      actions: [
-        {
-          displayName: "Posts",
-          href: "/",
-        },
-        {
-          displayName: "About",
-          href: "/About",
-        },
-        {
-          component: resolveComponent("DarkModeToggle"),
-        },
-      ],
-    };
+<script setup>
+import { ref, computed } from "vue";
+
+const opened = ref(false);
+const actions = ref([
+  {
+    displayName: "Posts",
+    href: "/",
   },
-};
+  {
+    displayName: "About",
+    href: "/About",
+  },
+  {
+    component: resolveComponent("DarkModeToggle"),
+  },
+]);
+
+const [darkMode] = useDarkMode();
+const burgerSrc = computed(() => {
+  return darkMode.value ? "/icons/colored-burger.png" : "/icons/burger.png";
+});
 </script>
 
 <template>
@@ -42,7 +43,7 @@ export default {
         </li>
       </ul>
       <div class="space-y-2 cursor-pointer lg:hidden" @click="opened = !opened">
-        <img class="w-8 h-8" src="/images/burger.png" alt="" />
+        <img class="w-8 h-8" :src="burgerSrc" alt="hamburger menu" />
       </div>
     </nav>
     <nav v-if="opened" class="w-full h-full absolute">
