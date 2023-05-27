@@ -1,12 +1,10 @@
 ---
-title: "Post #2"
-preview: in this post we'll discuss something something something
-backgroundImage: ../assets/images/post2.jpg
-tags: ["dev"]
+title: "about"
+preview:
+backgroundImage:
+tags: []
 published: 2022-11-18
 type: about
 ---
 
-# About Content v2
-
-this is shahar
+Hi. i'm Shahar.
