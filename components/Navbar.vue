@@ -9,7 +9,7 @@ const actions = ref([
   },
   {
     displayName: "About",
-    href: "/About",
+    href: "/about",
   },
   {
     component: resolveComponent("DarkModeToggle"),
