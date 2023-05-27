@@ -1,9 +1,4 @@
-<script setup>
-const formatDate = (str) => {
-  const date = new Date(str);
-  return `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
-};
-</script>
+<script setup></script>
 
 <template>
   <article>
