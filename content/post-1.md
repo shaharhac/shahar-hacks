@@ -4,7 +4,7 @@ preview: "this is the first post this is the first post this is the first post t
 backgroundImage: /images/man-watching-television.png
 tags: ["tag 1"]
 published: 2022-11-19
-type: post
+type: draft
 ---
 
 # Post #1

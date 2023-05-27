@@ -4,7 +4,7 @@ preview: this is the first post this is the second post this is the second post 
 backgroundImage: /images/chef-robot-cutting-paper.png
 tags: ["tag 1", "tag 2"]
 published: 2022-11-19
-type: post
+type: draft
 ---
 
 # Hello Content v2!
