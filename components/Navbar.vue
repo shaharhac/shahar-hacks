@@ -47,11 +47,13 @@ const burgerSrc = computed(() => {
       </div>
     </nav>
     <nav v-if="opened" class="w-full h-full absolute">
-      <ul class="flex flex-col text-center">
+      <ul
+        class="flex flex-col text-center"
+        v-click-outside="() => (opened = false)"
+      >
         <li
           v-for="(action, index) in actions"
           :key="index"
-          v-click-outside="() => (opened = false)"
           @click="opened = false"
         >
           <NuxtLink
