@@ -16,9 +16,16 @@ const actions = ref([
   },
 ]);
 
-const [darkMode] = useDarkMode();
+const colorMode = useColorMode();
+const dark = computed(() => {
+  return (
+    (colorMode.preference === "system" && colorMode.value === "dark") ||
+    colorMode.preference === "dark"
+  );
+});
+
 const burgerSrc = computed(() => {
-  return darkMode.value ? "/icons/colored-burger.png" : "/icons/burger.png";
+  return dark.value ? "/icons/colored-burger.png" : "/icons/burger.png";
 });
 </script>
 

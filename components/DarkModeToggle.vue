@@ -1,16 +1,23 @@
 <script setup>
 import { computed } from "vue";
 
-const [darkMode, setDarkMode] = useDarkMode();
+const colorMode = useColorMode();
+const dark = computed(() => {
+  return (
+    (colorMode.preference === "system" && colorMode.value === "dark") ||
+    colorMode.preference === "dark"
+  );
+});
 
 const imgSrc = computed(() => {
-  return darkMode.value
-    ? "/icons/lightbulb-on.png"
-    : "/icons/lightbulb-off.png";
+  return dark.value ? "/icons/lightbulb-on.png" : "/icons/lightbulb-off.png";
 });
 
 const toggle = () => {
-  setDarkMode(!darkMode.value);
+  const currentColor =
+    colorMode.preference === "system" ? colorMode.value : colorMode.preference;
+
+  colorMode.preference = currentColor === "dark" ? "light" : "dark";
 };
 </script>
 
