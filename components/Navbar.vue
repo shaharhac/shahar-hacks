@@ -49,12 +49,14 @@ const burgerSrc = computed(() => {
           </div>
         </li>
       </ul>
-      <div
-        class="flex flex-row gap-5 cursor-pointer lg:hidden"
-        @click="opened = !opened"
-      >
+      <div class="flex flex-row gap-5 cursor-pointer lg:hidden">
         <DarkModeToggle class="w-8 h-8" />
-        <img class="w-8 h-8" :src="burgerSrc" alt="hamburger menu" />
+        <img
+          class="w-8 h-8"
+          :src="burgerSrc"
+          alt="hamburger menu"
+          @click="opened = !opened"
+        />
       </div>
     </nav>
     <nav v-if="opened" class="w-full h-full absolute">
