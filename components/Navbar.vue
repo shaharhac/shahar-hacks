@@ -36,7 +36,7 @@ const burgerSrc = computed(() => {
       role="navigation"
       aria-label="main navigation"
     >
-      <NuxtLink to="/">
+      <NuxtLink to="/" class="min-w-fit">
         <h1 class="text-xl font-burtons">SHAHAR HACKS</h1>
       </NuxtLink>
       <ul class="flex items-center gap-8 invisible lg:visible">
