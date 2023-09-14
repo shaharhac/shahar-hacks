@@ -14,4 +14,9 @@ export default defineNuxtConfig({
     // Render these routes with SPA
     "/**": { ssr: false },
   },
+  runtimeConfig: {
+    public: {
+      googleAnalyticsId: process.env.GOOGLE_ANALYTICS_ID,
+    },
+  },
 });
