@@ -32,7 +32,7 @@ const burgerSrc = computed(() => {
 <template>
   <div class="relative">
     <nav
-      class="py-10 flex justify-between items-center"
+      class="pt-10 pb-5 flex justify-between items-center"
       role="navigation"
       aria-label="main navigation"
     >
@@ -59,7 +59,7 @@ const burgerSrc = computed(() => {
         />
       </div>
     </nav>
-    <nav v-if="opened" class="w-full h-full absolute">
+    <nav v-if="opened" class="w-full h-full mb-10">
       <ul
         class="flex flex-col text-center"
         v-click-outside="() => (opened = false)"
