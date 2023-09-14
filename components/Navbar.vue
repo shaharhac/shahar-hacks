@@ -72,7 +72,7 @@ const burgerSrc = computed(() => {
           <NuxtLink
             v-if="action.href"
             :to="action.href"
-            class="bg-white hover:bg-green-500 p-6 block border border-black dark:border-white dark:bg-gray-700 dark:hover:bg-gray-600"
+            class="p-3 block dark:text-white hover:text-gray-600 dark:hover:text-gray-200"
           >
             {{ action.displayName }}
           </NuxtLink>
